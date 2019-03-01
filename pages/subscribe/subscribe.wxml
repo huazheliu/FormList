@@ -1,0 +1,39 @@
+<form bindsubmit='true' bindreset='true'>
+  <view class='form-container'>
+    <text></text>
+    <view class='title'>
+      <text>请填写信息以预约老师</text>
+    </view>
+    <text>姓名：</text>
+    <input class='input' maxlength='15'></input>
+    <text>性别：</text>
+    <input class='input' maxlength='15'></input>
+    <text>学号：</text>
+    <input class='input' maxlength='15'></input>
+    <text>联系方式：</text>
+    <input class='input' maxlength='15'></input>
+    <text>预约紧急程度：</text>
+    <radio-group>
+      <radio value='及其紧急'>及其紧急</radio>
+      <radio value='紧急'>紧急</radio>
+      <radio value='一般' checked='checked'>一般</radio>
+    </radio-group>
+    <text>自我评价（最近两周内）：</text>
+    <checkbox-group>
+      <checkbox value='我最近容易悲伤哭泣'>我最近容易悲伤哭泣</checkbox>
+      <checkbox value='我最近睡的变少或变多'>我最近睡的变少或变多</checkbox>
+      <checkbox value='我最近对对很多事情失去兴趣'>我最近对对很多事情失去兴趣</checkbox>
+      <checkbox value='我最近常有罪恶感'>我最近常有罪恶感</checkbox>
+      <checkbox value='我最近容易自我批评'>我最近容易自我批评</checkbox>
+      <checkbox value='我最近变得容易疲倦'>我最近变得容易疲倦</checkbox>
+      <checkbox value='我最近东西吃的变少或变多'>我最近东西吃的变少或变多</checkbox>
+      <checkbox value='我觉得身体无力'>我觉得身体无力</checkbox>
+      <checkbox value='我最近自己没有价值'>我最近觉得自己没有价值</checkbox>
+      <checkbox value='我有自杀的念头'>我有自杀的念头</checkbox>
+    </checkbox-group>
+    <view class='button-container'>
+      <button form-type='submit' bindtap='submit' type='primary'>提交</button>
+      <button form-type='reset' type='warn'>重置</button>
+    </view>
+  </view>
+</form>
